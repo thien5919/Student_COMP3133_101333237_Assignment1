@@ -1,0 +1,20 @@
+{
+  "name": "assignment1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thien5919/Student_COMP3133_101333237_Assignment1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thien5919/Student_COMP3133_101333237_Assignment1/issues"
+  },
+  "homepage": "https://github.com/thien5919/Student_COMP3133_101333237_Assignment1#readme"
+}
