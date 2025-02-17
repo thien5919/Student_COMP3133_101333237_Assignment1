@@ -15,21 +15,22 @@ Query<br>
 <br>
 Mutation:<br>
     Sign Up<br>
-    [Screenshot from 2025-02-14 14-58-19](https://github.com/user-attachments/assets/83c1ea64-f52f-42f6-bda4-112a70a18d73)
+    ![Screenshot from 2025-02-14 14-58-19](https://github.com/user-attachments/assets/83c1ea64-f52f-42f6-bda4-112a70a18d73)
     ![Screenshot from 2025-02-16 22-53-02](https://github.com/user-attachments/assets/f03ef8f6-f8fb-48c9-a170-475d55f68161)
-
-    Add New Employee
+    <br>
+    Add New Employee<br>
     ![Screenshot from 2025-02-16 23-02-44](https://github.com/user-attachments/assets/b94b20a2-870e-49d8-bd4c-aa44e220f325)
-
-    Update Employee by ID
+    <br>
+    Update Employee by ID<br>
     ![Screenshot from 2025-02-16 23-07-55](https://github.com/user-attachments/assets/00fa8265-d37c-425c-ae2a-ac96c358e4f4)
-
-    Delete Employee by ID
+    <br>
+    Delete Employee by ID<br>
     ![Screenshot from 2025-02-16 23-09-58](https://github.com/user-attachments/assets/adce8050-b929-4692-b477-97780ce128e5)
-
-    After Delete
+    <br>
+    After Delete<br>
     ![Screenshot from 2025-02-16 23-10-11](https://github.com/user-attachments/assets/21b38a3c-ca1c-4558-aa50-d417fe99d57a)
-
+    <br>
+    <br>
 Atlas Database
 ![Screenshot from 2025-02-16 23-15-07](https://github.com/user-attachments/assets/736261a5-e71a-4c25-9552-b23dc6b95277)
 ![Screenshot from 2025-02-16 23-15-18](https://github.com/user-attachments/assets/15340766-930b-4087-aba2-ad1edced7ff6)
