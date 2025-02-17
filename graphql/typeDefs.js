@@ -26,10 +26,11 @@ const typeDefs = gql`
     type AuthPayload {
         token: String!
         user: User!
+        message: String!
     }
 
     type Query {
-        login(username: String!, password: String!): AuthPayload
+        login(username: String, email: String, password: String!): AuthPayload
         getAllEmployees: [Employee]
         getEmployeeById(id: ID!): Employee
         getEmployeesByDesignationOrDepartment(designation: String, department: String): [Employee]
@@ -62,7 +63,7 @@ const typeDefs = gql`
             employee_photo: String  
         ): Employee
 
-        deleteEmployee(id: ID!): Boolean  
+        deleteEmployee(id: ID!): String 
     }
 `;
 

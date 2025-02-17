@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const Employee = require('../models/Employee');
 const { GraphQLScalarType, Kind } = require('graphql');
+const dotenv = require('dotenv');
 
 // Custom Date Scalar Type
 const dateScalar = new GraphQLScalarType({
@@ -23,10 +24,10 @@ const resolvers = {
     Date: dateScalar,
     
     Query: {
-        login: async (_, { username, password }) => {
+        login: async (_, { username, email, password }) => {
             try {
-                const user = await User.findOne({ username });
-                if (!user) throw new Error('User not found');
+                const user = await User.findOne({ $or: [ {username}, {email}] });
+                if (!user) throw new Error('User or email not found');
 
                 
                 const isMatch = await user.matchPassword(password);
@@ -35,7 +36,10 @@ const resolvers = {
 
                 const token = jwt.sign({ id: user._id }, process.env.SECRET, { expiresIn: '1d' });
 
-                return { token, user };
+                return { message: "Login successful!",
+                  token, 
+                  user 
+                };
             } catch (error) {
                 throw new Error(error.message);
             }
@@ -85,12 +89,15 @@ const resolvers = {
                 }
 
                 // Hash password and create new user
-                const hashedPassword = await bcrypt.hash(password, 10);
-                const newUser = new User({ username, email, password: hashedPassword });
+                const newUser = new User({ username, email, password });
                 await newUser.save();
-
+                const token = jwt.sign({ id: newUser._id }, process.env.SECRET, { expiresIn: '1d' });
+                
+                
+                console.log(token);
                 return {
                     message: "User registered successfully!",
+                    token,
                     user: newUser
                 };
             } catch (error) {
@@ -101,21 +108,24 @@ const resolvers = {
         addNewEmployee: async (_, args) => {
             try {
               const { first_name, last_name, email, gender, designation, salary, date_of_joining, department } = args;
+              console.log(args);
+
 
               if (!first_name || !last_name || !email || !gender || !designation || !salary || !date_of_joining || !department) {
-                  throw new Error("All fields are required.");
+                throw new Error("All fields are required.");
               }
+             
               const emailRegex = /^\S+@\S+\.\S+$/;
               if (!emailRegex.test(email)) {
                   throw new Error("Invalid email format.");
               }
-
-              // ✅ Validate salary is a number
-              if (typeof salary !== 'number' || salary <= 0) {
-                  throw new Error("Salary must be a positive number.");
+              
+              if (salary < 1000) {
+                  throw new Error("Salary must be at least 1000.");
               }
 
-              // ✅ Ensure `date_of_joining` is in correct format (YYYY-MM-DD)
+
+              // Ensure `date_of_joining` is in correct format (YYYY-MM-DD)
               if (isNaN(Date.parse(date_of_joining))) {
                 throw new Error("Invalid date format. Expected format: YYYY-MM-DD.");
               }
@@ -128,6 +138,7 @@ const resolvers = {
 
               // ✅ Save new employee
               const employee = new Employee(args);
+              await employee.save();
       
                 return employee;
             } catch (error) {
