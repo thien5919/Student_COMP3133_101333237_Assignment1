@@ -1,4 +1,7 @@
 # Student_COMP3133_101333237_Assignment1!
+<b>Student Name:</b> Duc Thien Tran <br>
+<b>Student ID:</b> 101333237
+
 Query<br>
     Login<br>
     ![Screenshot from 2025-02-16 22-55-48](https://github.com/user-attachments/assets/2b95a14d-d875-4a4c-b30a-0d44590c075b)
