@@ -18,7 +18,6 @@ Query<br>
 <br>
 Mutation:<br>
     Sign Up<br>
-    
     ![Screenshot from 2025-02-16 22-53-10](https://github.com/user-attachments/assets/cb97d690-b2fd-4b19-8861-a176ae9ad697)
     ![Screenshot from 2025-02-16 22-53-02](https://github.com/user-attachments/assets/f03ef8f6-f8fb-48c9-a170-475d55f68161)
     <br>
