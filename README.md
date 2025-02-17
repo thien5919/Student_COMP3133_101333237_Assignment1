@@ -18,10 +18,12 @@ Query<br>
 <br>
 Mutation:<br>
     Sign Up<br>
-    ![Screenshot from 2025-02-14 14-58-19](https://github.com/user-attachments/assets/83c1ea64-f52f-42f6-bda4-112a70a18d73)
+    
+    ![Screenshot from 2025-02-16 22-53-10](https://github.com/user-attachments/assets/cb97d690-b2fd-4b19-8861-a176ae9ad697)
     ![Screenshot from 2025-02-16 22-53-02](https://github.com/user-attachments/assets/f03ef8f6-f8fb-48c9-a170-475d55f68161)
     <br>
     Add New Employee<br>
+    
     ![Screenshot from 2025-02-16 23-02-44](https://github.com/user-attachments/assets/b94b20a2-870e-49d8-bd4c-aa44e220f325)
     <br>
     Update Employee by ID<br>
