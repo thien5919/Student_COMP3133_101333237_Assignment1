@@ -1,19 +1,20 @@
 # Student_COMP3133_101333237_Assignment1!
-Query
-    Login
+Query<br>
+    Login<br>
     ![Screenshot from 2025-02-16 22-55-48](https://github.com/user-attachments/assets/2b95a14d-d875-4a4c-b30a-0d44590c075b)
-    
-    Get All Employee
+    <br>
+    Get All Employee<br>
     ![Screenshot from 2025-02-16 23-04-29](https://github.com/user-attachments/assets/cd62296f-344f-4161-8682-58ac8569a1e9)
-
-    Get Employee by ID
+    <br>
+    Get Employee by ID<br>
     ![Screenshot from 2025-02-16 23-05-18](https://github.com/user-attachments/assets/8d2ec601-0498-4fb6-bc38-9b88baa24395)
-
-    Get Employees by Designation or Department
-    ![Screenshot from 2025-02-16 23-12-38](https://github.com/user-attachments/assets/7b1e4273-7544-48a0-8bad-b7d89e6156a5)    
-
-Mutation:
-    Sign Up
+    <br>
+    Get Employees by Designation or Department<br>
+    ![Screenshot from 2025-02-16 23-12-38](https://github.com/user-attachments/assets/7b1e4273-7544-48a0-8bad-b7d89e6156a5)            
+<br>
+<br>
+Mutation:<br>
+    Sign Up<br>
     [Screenshot from 2025-02-14 14-58-19](https://github.com/user-attachments/assets/83c1ea64-f52f-42f6-bda4-112a70a18d73)
     ![Screenshot from 2025-02-16 22-53-02](https://github.com/user-attachments/assets/f03ef8f6-f8fb-48c9-a170-475d55f68161)
 
