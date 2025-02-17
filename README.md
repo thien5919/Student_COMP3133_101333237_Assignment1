@@ -22,7 +22,6 @@ Mutation:<br>
     ![Screenshot from 2025-02-16 22-53-02](https://github.com/user-attachments/assets/f03ef8f6-f8fb-48c9-a170-475d55f68161)
     <br>
     Add New Employee<br>
-    
     ![Screenshot from 2025-02-16 23-02-44](https://github.com/user-attachments/assets/b94b20a2-870e-49d8-bd4c-aa44e220f325)
     <br>
     Update Employee by ID<br>
